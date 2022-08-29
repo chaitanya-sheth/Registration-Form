@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.heading{
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 25px;
+    background-color: rgba(0, 204, 255, 0.63);
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin:auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.form {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    border-right: 2px solid rgba(0, 204, 255, 0.63);
+    overflow-y: auto;
+}
+
+input[type="text"],input[type="email"],input[type="url"] {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.form button {
+    width: 30%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.541);
+    color: white;
+}
+
+input {
+    margin: 10px;
+}
+
+.output {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cardContainer {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.card {
+    width: 90%;
+    height: auto;
+    display: flex;
+    background-color: #0F3D3E;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0.3rem 0;
+    word-wrap: break-word;
+    line-break: strict;
+}
+
+img {
+    width: 140px;
+    height: 150px;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.card .info a {
+    color: rgb(43, 64, 255);
+}
+
+.card .info button {
+    padding: 2px 5px;
+    margin: 5px 0;
+    border-radius: 5px;  
+}
+
+@media (max-width:1200px) {
+
+    .container {
+        display: block;
+        width: 80%;
+    }
+    .form{
+        border-right: none;
+        width: 90%;
+    }
+    .cardContainer {
+        height: 70%;
+        overflow-y: auto;
+    }
+    .card {
+        display: block;
+    }
+    .output {
+        width: 100%;
+    }
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+}
